@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+      display: grid;
+      height: 100vh;
+    margin: 0;
+    font-family: Helvetica;
+
+    
+  } 
+
+  header {
+      text-align: center;
+      height: 10vh;
+  }
+
+  h1 {
+      margin: 0;
+  }
+
+  main {
+      height: 85vh;
+      display: grid;
+      align-items: end;
+  }
