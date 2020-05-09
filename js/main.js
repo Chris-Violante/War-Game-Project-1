@@ -2,12 +2,7 @@
 // define a cards object that contains all of the cards for the game
 // define two player's cards arrays that holds the randomnly dealt cards of each player
 // define the ranking of the cards/win combinations
-const deck = [
-    {
-        name: "card c08",
-        value: 8
-    }
-]
+
 
 // /*----- app's state (variables) -----*/
 // use a board array to represent the cards in play
