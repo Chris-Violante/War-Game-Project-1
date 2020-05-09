@@ -1,30 +1,41 @@
 // /*----- constants -----*/
-// define a cards object that contains all of the cards for the game
-// define two player's cards arrays that holds the randomnly dealt cards of each player
-// define the ranking of the cards/win combinations
+// const deck in other JS is entire deck of cards
+const playerCards = [];
+const opponentCards = [];
+const score = {
+    playerScore: 0,
+    opponentScore: 0
+};
 
 
 // /*----- app's state (variables) -----*/
 // use a board array to represent the cards in play
-// use a 'winner' variable to represent player that won/lost/tie
+let winner;
 // won rounds counter to 0
 
 
 // /*----- cached element references -----*/
-// cache the elements that represent the board
-// cache the elements that represent the buttons on the page
+playerCard = document.getElementsByClassName('player');
+opponentCard = document.getElementsByClassName('opponent');
+warBtn = document.getElementById('war');
+newGameBtn = document.getElementById('newGame');
+statusBar = document.getElementsByTagName('a');
 // cache the win round counter
 // cache each theme option
 
 
 
 // /*----- event listeners -----*/
-// listen for click on "new game" button
-// listen for click on "WAR" button
+newGameBtn.addEventListener('click', init);
+warBtn.addEventListener('click', render);
 // listen for click on "theme" buttons
 
 
 // /*----- functions -----*/
+function init() {
+    console.log('new game button works');
+};
+// shuffle function
 // use "new game" listener to start initialization
 // initialize whose turn it is
 // initialize winner to null so the turn can be played
@@ -32,6 +43,9 @@
 // initialize the win round counter to 0
 // call render function to start game when "WAR" button is pressed
 
+function render() {
+    console.log('WAR!!!!')
+};
 // render the play area
 // flip one card from each deck array
 // render a message to reflect a winner/loser/tie/game over

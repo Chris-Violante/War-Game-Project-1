@@ -208,3 +208,15 @@ const deck = [
         value: 2
     },
 ]
+
+let shuffledDeck = [];
+
+function shuffleDeck() {
+  const tempDeck = deck;
+  while (tempDeck.length) {
+      const rndIdx = Math.floor(Math.random() * tempDeck.length);
+      shuffledDeck.push(tempDeck.splice(rndIdx, 1));
+  };
+};
+
+console.log(shuffledDeck);
