@@ -20,35 +20,35 @@ const deck = [
         value: 10
     },
     {
-        name: "card d9",
+        name: "card d09",
         value: 9
     },
     {
-        name: "card d8",
+        name: "card d08",
         value: 8
     },
     {
-        name: "card d7",
+        name: "card d07",
         value: 7
     },
     {
-        name: "card d6",
+        name: "card d06",
         value: 6
     },
     {
-        name: "card d5",
+        name: "card d05",
         value: 5
     },
     {
-        name: "card d4",
+        name: "card d04",
         value: 4
     },
     {
-        name: "card d3",
+        name: "card d03",
         value: 3
     },
     {
-        name: "card d2",
+        name: "card d02",
         value: 2
     },
     {
@@ -72,35 +72,35 @@ const deck = [
         value: 10
     },
     {
-        name: "card h9",
+        name: "card h09",
         value: 9
     },
     {
-        name: "card h8",
+        name: "card h08",
         value: 8
     },
     {
-        name: "card h7",
+        name: "card h07",
         value: 7
     },
     {
-        name: "card h6",
+        name: "card h06",
         value: 6
     },
     {
-        name: "card h5",
+        name: "card h05",
         value: 5
     },
     {
-        name: "card h4",
+        name: "card h04",
         value: 4
     },
     {
-        name: "card h3",
+        name: "card h03",
         value: 3
     },
     {
-        name: "card h2",
+        name: "card h02",
         value: 2
     },
     {
@@ -124,35 +124,35 @@ const deck = [
         value: 10
     },
     {
-        name: "card s9",
+        name: "card s09",
         value: 9
     },
     {
-        name: "card s8",
+        name: "card s08",
         value: 8
     },
     {
-        name: "card s7",
+        name: "card s07",
         value: 7
     },
     {
-        name: "card s6",
+        name: "card s06",
         value: 6
     },
     {
-        name: "card s5",
+        name: "card s05",
         value: 5
     },
     {
-        name: "card s4",
+        name: "card s04",
         value: 4
     },
     {
-        name: "card s3",
+        name: "card s03",
         value: 3
     },
     {
-        name: "card s2",
+        name: "card s02",
         value: 2
     },
     {
@@ -176,47 +176,47 @@ const deck = [
         value: 10
     },
     {
-        name: "card c9",
+        name: "card c09",
         value: 9
     },
     {
-        name: "card c8",
+        name: "card c08",
         value: 8
     },
     {
-        name: "card c7",
+        name: "card c07",
         value: 7
     },
     {
-        name: "card c6",
+        name: "card c06",
         value: 6
     },
     {
-        name: "card c5",
+        name: "card c05",
         value: 5
     },
     {
-        name: "card c4",
+        name: "card c04",
         value: 4
     },
     {
-        name: "card c3",
+        name: "card c03",
         value: 3
     },
     {
-        name: "card c2",
+        name: "card c02",
         value: 2
     },
 ]
+// fisher yates algorithm for shuffling an array
+function shuffleCards(deck) {
+    for(let i = deck.length -1; i > 0; i--) {
+        let x = Math.floor(Math.random() * (i + 1));
+        let temp = deck[i];
+        deck[i] = deck[x];
+        deck[x] = temp;
+    }
+    return deck;
+}
 
-let shuffledDeck = [];
-
-function shuffleDeck() {
-  const tempDeck = deck;
-  while (tempDeck.length) {
-      const rndIdx = Math.floor(Math.random() * tempDeck.length);
-      shuffledDeck.push(tempDeck.splice(rndIdx, 1));
-  };
-};
-
-console.log(shuffledDeck);
+shuffleCards(deck); 
