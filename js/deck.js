@@ -219,4 +219,3 @@ function shuffleCards(deck) {
     return deck;
 }
 
-shuffleCards(deck); 

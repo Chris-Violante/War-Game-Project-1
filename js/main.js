@@ -1,17 +1,19 @@
 // /*----- constants -----*/
 // const deck in other JS is entire deck of cards
-const playerCards = [];
-const opponentCards = [];
+const oppCard = [];
+const playCard = [];
 const score = {
-    playerScore: 0,
+    playerScore: 100,
     opponentScore: 0
 };
 
 
 // /*----- app's state (variables) -----*/
 // use a board array to represent the cards in play
-let winner;
-// won rounds counter to 0
+let round;
+let playerCards = [];
+let opponentCards = [];
+let shuffledDeck = [];
 
 
 // /*----- cached element references -----*/
@@ -33,12 +35,13 @@ warBtn.addEventListener('click', render);
 
 // /*----- functions -----*/
 function init() {
-    console.log('new game button works');
+   shuffledDeck = (shuffleCards(deck));
+   playerCards = (shuffledDeck.slice(0, 26)); 
+   opponentCards = (shuffledDeck.slice(26, 52));
+    score.playerScore = 0;
+    score.opponentScore = 0;
 };
-// shuffle function
 // use "new game" listener to start initialization
-// initialize whose turn it is
-// initialize winner to null so the turn can be played
 // initialize the board to have no cards in play
 // initialize the win round counter to 0
 // call render function to start game when "WAR" button is pressed
