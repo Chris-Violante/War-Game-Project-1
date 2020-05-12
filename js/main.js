@@ -1,9 +1,7 @@
 // /*----- constants -----*/
 // const deck in other JS is entire deck of cards
-const oppCard = [];
-const playCard = [];
 const score = {
-    playerScore: 100,
+    playerScore: 0,
     opponentScore: 0
 };
 
@@ -14,14 +12,13 @@ let round;
 let playerCards = [];
 let opponentCards = [];
 let shuffledDeck = [];
-
+let playerCard;
+let opponentCard;
 
 // /*----- cached element references -----*/
-playerCard = document.getElementsByClassName('player');
-opponentCard = document.getElementsByClassName('opponent');
 warBtn = document.getElementById('war');
 newGameBtn = document.getElementById('newGame');
-statusBar = document.getElementsByTagName('a');
+statusBar = document.querySelector('#status');
 // cache the win round counter
 // cache each theme option
 
@@ -40,21 +37,51 @@ function init() {
    opponentCards = (shuffledDeck.slice(26, 52));
     score.playerScore = 0;
     score.opponentScore = 0;
+    round = 0;
 };
-// use "new game" listener to start initialization
-// initialize the board to have no cards in play
-// initialize the win round counter to 0
-// call render function to start game when "WAR" button is pressed
 
 function render() {
-    console.log('WAR!!!!')
+    if (opponentCards.length === 0) {
+        statusBar.innerHTML = "Player wins the game!!!!"
+    }
+    if (playerCards.length === 0){
+        statusBar.innerHTML = "Opponent wins the game :("     
+    }
+       playCards();
+   if(playerCard.value > opponentCard.value) {
+        statusBar.innerHTML = "Player wins this round!"
+   } else if(opponentCard.value > playerCard.value) {
+    statusBar.innerHTML = "Opponent wins this round!"
+   } else if (opponentCard.value = playerCard.value) {
+       statusBar.innerHTML = "Its a tie! WAR!!!"
+   }
+   checkForWinner();
 };
-// render the play area
-// flip one card from each deck array
-// render a message to reflect a winner/loser/tie/game over
-// wait for next click of "WAR" button
+
+function checkForWinner() {
+       if(playerCard.value > opponentCard.value) {
+        score.playerScore += 1
+    }else if (playerCard.value < opponentCard.value) {
+        score.opponentScore += 1
+    }else if (playerCard.value === opponentCard.value) {
+        for(i=1; i <= 4; i++) {
+            playCards();
+        } 
+        checkForWinner();
+    }
+}
+
+function playCards() {
+    playerCard = playerCards.shift();
+    opponentCard = opponentCards.shift();
+    document.querySelector('#player').setAttribute('class', playerCard.name);
+    document.querySelector('#opponent').setAttribute('class', opponentCard.name);
+};
+
+
 
 // check for winner function that determines which card is a higher value and declares that player who has that card the winner of the round
+// move cards of hand played to the end of the winners cards
 // add 1 to the won rounds counter of the player that won the hand
 // play celebratory or dissapointing sound or tie sound
 // return back to render function for next hand

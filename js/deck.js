@@ -1,210 +1,210 @@
 const deck = [
     {
-        name: "card dA",
+        name: "card xlarge dA",
         value: 14
     },
     {
-        name: "card dK",
+        name: "card xlarge dK",
         value: 13
     },
     {
-        name: "card dQ",
+        name: "card xlarge dQ",
         value: 12
     },
     {
-        name: "card dJ",
+        name: "card xlarge dJ",
         value: 11
     },
     {
-        name: "card d10",
+        name: "card xlarge d10",
         value: 10
     },
     {
-        name: "card d09",
+        name: "card xlarge d09",
         value: 9
     },
     {
-        name: "card d08",
+        name: "card xlarge d08",
         value: 8
     },
     {
-        name: "card d07",
+        name: "card xlarge d07",
         value: 7
     },
     {
-        name: "card d06",
+        name: "card xlarge d06",
         value: 6
     },
     {
-        name: "card d05",
+        name: "card xlarge d05",
         value: 5
     },
     {
-        name: "card d04",
+        name: "card xlarge d04",
         value: 4
     },
     {
-        name: "card d03",
+        name: "card xlarge d03",
         value: 3
     },
     {
-        name: "card d02",
+        name: "card xlarge d02",
         value: 2
     },
     {
-        name: "card hA",
+        name: "card xlarge hA",
         value: 14
     },
     {
-        name: "card hK",
+        name: "card xlarge hK",
         value: 13
     },
     {
-        name: "card hQ",
+        name: "card xlarge hQ",
         value: 12
     },
     {
-        name: "card hJ",
+        name: "card xlarge hJ",
         value: 11
     },
     {
-        name: "card h10",
+        name: "card xlarge h10",
         value: 10
     },
     {
-        name: "card h09",
+        name: "card xlarge h09",
         value: 9
     },
     {
-        name: "card h08",
+        name: "card xlarge h08",
         value: 8
     },
     {
-        name: "card h07",
+        name: "card xlarge h07",
         value: 7
     },
     {
-        name: "card h06",
+        name: "card xlarge h06",
         value: 6
     },
     {
-        name: "card h05",
+        name: "card xlarge h05",
         value: 5
     },
     {
-        name: "card h04",
+        name: "card xlarge h04",
         value: 4
     },
     {
-        name: "card h03",
+        name: "card xlarge h03",
         value: 3
     },
     {
-        name: "card h02",
+        name: "card xlarge h02",
         value: 2
     },
     {
-        name: "card sA",
+        name: "card xlarge sA",
         value: 14
     },
     {
-        name: "card sK",
+        name: "card xlarge sK",
         value: 13
     },
     {
-        name: "card sQ",
+        name: "card xlarge sQ",
         value: 12
     },
     {
-        name: "card sJ",
+        name: "card xlarge sJ",
         value: 11
     },
     {
-        name: "card s10",
+        name: "card xlarge s10",
         value: 10
     },
     {
-        name: "card s09",
+        name: "card xlarge s09",
         value: 9
     },
     {
-        name: "card s08",
+        name: "card xlarge s08",
         value: 8
     },
     {
-        name: "card s07",
+        name: "card xlarge s07",
         value: 7
     },
     {
-        name: "card s06",
+        name: "card xlarge s06",
         value: 6
     },
     {
-        name: "card s05",
+        name: "card xlarge s05",
         value: 5
     },
     {
-        name: "card s04",
+        name: "card xlarge s04",
         value: 4
     },
     {
-        name: "card s03",
+        name: "card xlarge s03",
         value: 3
     },
     {
-        name: "card s02",
+        name: "card xlarge s02",
         value: 2
     },
     {
-        name: "card cA",
+        name: "card xlarge cA",
         value: 14
     },
     {
-        name: "card cK",
+        name: "card xlarge cK",
         value: 13
     },
     {
-        name: "card cQ",
+        name: "card xlarge cQ",
         value: 12
     },
     {
-        name: "card cJ",
+        name: "card xlarge cJ",
         value: 11
     },
     {
-        name: "card c10",
+        name: "card xlarge c10",
         value: 10
     },
     {
-        name: "card c09",
+        name: "card xlarge c09",
         value: 9
     },
     {
-        name: "card c08",
+        name: "card xlarge c08",
         value: 8
     },
     {
-        name: "card c07",
+        name: "card xlarge c07",
         value: 7
     },
     {
-        name: "card c06",
+        name: "card xlarge c06",
         value: 6
     },
     {
-        name: "card c05",
+        name: "card xlarge c05",
         value: 5
     },
     {
-        name: "card c04",
+        name: "card xlarge c04",
         value: 4
     },
     {
-        name: "card c03",
+        name: "card xlarge c03",
         value: 3
     },
     {
-        name: "card c02",
+        name: "card xlarge c02",
         value: 2
     },
 ]
