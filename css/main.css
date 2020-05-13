@@ -7,7 +7,7 @@
       height: 100vh;
     margin: 0;
     font-family: Helvetica;
-    align-content: center;
+    justify-content: center;
   } 
 
   header {
@@ -27,20 +27,17 @@
       height: 85vh;
       display: grid;
       grid-template-columns: auto;
-  }
-
-  div {
       text-align: center;
+      justify-items: center;
   }
 
-  main {
-    justify-content: center;
-  }
-
-  a {
+  #status {
       font-size: 18pt;
       text-transform: uppercase;
       color: red;
       font-weight: bolder;
   }
 
+  footer {
+    text-align: center;
+}
