@@ -8,6 +8,8 @@
     margin: 0;
     font-family: Helvetica;
     justify-content: center;
+    background: black;
+    font-family: 'Frijole', cursive;
   } 
 
   header {
@@ -41,3 +43,10 @@
   footer {
     text-align: center;
 }
+
+
+  #infoBar {
+      color: red;
+      font-weight: bolder;
+
+  }  

@@ -18,7 +18,7 @@ let tieCards = [];
 warBtn = document.getElementById('war');
 newGameBtn = document.getElementById('newGame');
 statusBar = document.querySelector('#status');
-document.querySelector('#infoBar').innerHTML = `Player Cards: ${playerCards.length}, Opponent Cards: ${opponentCards.length}`
+
 
 
 // /*----- event listeners -----*/
@@ -35,6 +35,7 @@ function init() {
     score.playerScore = 0;
     score.opponentScore = 0;
     round = 0;
+    document.querySelector('#infoBar').innerHTML = `Player Cards: ${playerCards.length} Opponent Cards: ${opponentCards.length}`
 };
 
 function render() {
