@@ -1,11 +1,7 @@
 # War
 War is a simple-to-play card game that is typically played with two players.  The deck is shuffled and each player gets an even amount of cards.  At the same time both players flip their top card and the player who flips the higher value card keeps the cards that were played and these cards move to the bottom of the winner's deck. This is typically called a battle.  
 
-<<<<<<< HEAD
-When players flip the same card and tie, they begin a war.  Each player then puts two additional cards face down and a third face up for a total of 8 cards in play.  The player to flip the higher face up card, keeps all 8 cards that were played.
-=======
-When players flip the same card and tie, they begin a war.  Each player then puts two additional cards face down and a third face up.  The player to flip the higher face up card, keeps all the cards that were in play.  
->>>>>>> master
+When players flip the same card and tie, they begin a war.  Each player then puts two additional cards face down and a third face up for a total of 8 cards in play.  The player to flip the higher face up card, keeps all 8 cards that were played. 
 
 In this version of war, the face down cards are played, but only the final, face up card is shown on the user interface.  
 
